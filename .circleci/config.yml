@@ -28,12 +28,12 @@ jobs:
 workflows:
 
   my_workflow:
-  
+
     jobs:
       - build
       - test:
           requires:
             - build
       - analyze:
-          rquires:
+          requires:
             - test
